@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ComplexListView</string>
+    <string name="action_settings">Settings</string>
+    <string name="textViewName">Name</string>
+    <string name="textViewDescription">Description</string>
+    <string name="textViewYear">2014</string>
+</resources>
