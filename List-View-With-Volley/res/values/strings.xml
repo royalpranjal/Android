@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ListViewWithVolley</string>
+    <string name="action_settings">Settings</string>
+    <string name="textViewGenre">Genre</string>
+    <string name="textViewYear">Year</string>
+    <string name="textViewRating">Rating :</string>
+    <string name="textViewName">Name</string>
+</resources>
