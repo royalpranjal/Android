@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pranjal.realm.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter username:"
+        android:id="@+id/textViewUsername"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUsername"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textViewUsername"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/buttonSave"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="65dp"
+        android:onClick="Save"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrieve"
+        android:id="@+id/buttonRetrieve"
+        android:layout_alignTop="@+id/buttonSave"
+        android:layout_toEndOf="@+id/buttonSave"
+        android:layout_marginStart="39dp"
+        android:onClick="Retrieve"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:id="@+id/textView"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/buttonSave"
+        android:layout_toStartOf="@+id/textViewUsername" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewId"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewFollowers"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignStart="@+id/textViewId" />
+
+</RelativeLayout>
