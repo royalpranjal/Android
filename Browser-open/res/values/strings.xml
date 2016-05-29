@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Browser</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+</resources>
