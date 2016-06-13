@@ -1,0 +1,68 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:id="@+id/searchLocation"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonSearch"
+            android:text="Search"
+            android:onClick="search"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonChangeView"
+            android:text="View"
+            android:onClick="changeView"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="300dp"
+        android:layout_height="572dp"
+        tools:context="pranjal.googlemapsapi.MapsActivity" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="140dp">
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="80dp"
+                android:text="+"
+                android:id="@+id/buttonZoomIn"
+                android:textAlignment="center"
+                android:layout_gravity="right"
+                android:onClick="onZoom"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="80dp"
+                android:text="-"
+                android:id="@+id/buttonZoomOut"
+                android:textAlignment="center"
+                android:layout_gravity="right"
+                android:onClick="onZoom"/>
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
